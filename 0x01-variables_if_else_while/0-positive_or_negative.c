@@ -3,11 +3,10 @@
 #include <time.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
-
 /**
- * Main functions
- * return: int
+ * main - assigns a random number to int variable n
+ * it then executes, and prints it
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
