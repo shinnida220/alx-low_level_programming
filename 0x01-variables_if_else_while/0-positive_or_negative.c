@@ -4,9 +4,10 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+
 /**
  * Main functions
- *
+ * return: int
  */
 int main(void)
 {
@@ -19,11 +20,11 @@ int main(void)
 	{
 		printf("%d is positive\n", n);
 	}
-	else if (n == 0) 
+	else if (n == 0)
 	{
 		printf("%d is zero\n", n);
 	}
-	else if (n < 0) 
+	else if (n < 0)
 	{
 		printf("%d is negative\n", n);
 	}
