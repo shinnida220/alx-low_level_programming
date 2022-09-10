@@ -3,7 +3,7 @@
 /**
  * main - two two-digit combo numbers
  * Return: Always 0
- *    */
+ */
 int main(void)
 {
 	int i;
