@@ -29,9 +29,8 @@ void jack_bauer(void)
 				mnRight = 0;
 				while (mnRight <= 9)
 				{
-					_putchar(1 + '0');
 					_putchar(hrLeft + '0');
-					_putchar( hrRight + '0');
+					_putchar(hrRight + '0');
 					_putchar(':');
 					_putchar(mnLeft + '0');
 					_putchar(mnRight + '0');
