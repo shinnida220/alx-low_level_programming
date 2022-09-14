@@ -35,7 +35,6 @@ void print_times_table(int n)
 			for (c = 0; c <= n; c++)
 			{
 				prd = r * c;
-				tens = prd / 10;
 				ones = prd % 10;
 
 				if (c == 0)
