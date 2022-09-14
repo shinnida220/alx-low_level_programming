@@ -12,10 +12,9 @@ void print_to_98(int s)
 	{
 		while (s <= 98)
 		{
-			_putchar(s + '0');
-			_putchar(',');
+			printf('%d,', s);
 			if (s != 98)
-				_putchar(' ');
+				printf(" ");
 			++s;
 		}
 	}
@@ -23,10 +22,9 @@ void print_to_98(int s)
 	{
 		while (s >= 98)
 		{
-			_putchar(s + '0');
-			_putchar(',');
+			printf('%d,', s);
 			if (s != 98)
-				_putchar(' ');
+				printf(" ");
 			--s;
 		}
 	}
