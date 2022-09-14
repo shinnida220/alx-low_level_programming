@@ -57,7 +57,7 @@ void print_times_table(int n)
 				{
 					_print_char(' ', 1, true);
 					_print_char(prd / 100 + '0', 1, false);
-					_print_char((prd / 10) % 10) + '0', 1, false);
+					_print_char(((prd / 10) % 10) + '0', 1, false);
 					_print_char((prd % 10) + '0', 1, false);
 				}
 			}
