@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_to_98 - prints natural numbers till 98.
  * @s: int starting point
