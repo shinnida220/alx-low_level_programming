@@ -30,9 +30,9 @@ void print_times_table(int n)
 	{
 		int r, c, prd, tens, ones;
 
-		for (r = 0; r <= 9; r++)
+		for (r = 0; r <= n; r++)
 		{
-			for (c = 0; c <= 9; c++)
+			for (c = 0; c <= n; c++)
 			{
 				prd = r * c;
 				tens = prd / 10;
