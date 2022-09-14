@@ -2,11 +2,10 @@
 
 /**
  * times_table -
- * 	prints the multiplication table of nine (9)
+ * prints the multiplication table of nine (9)
  *
  * Return: void
  */
-
 void times_table(void)
 {
 	int r, c, prd, tens, ones;
