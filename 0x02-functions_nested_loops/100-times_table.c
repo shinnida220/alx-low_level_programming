@@ -28,7 +28,7 @@ void print_times_table(int n)
 {
 	if (n >= 0 && n < 15)
 	{
-		int r, c, prd, tens, ones;
+		int r, c, prd, ones;
 
 		for (r = 0; r <= n; r++)
 		{
