@@ -12,7 +12,7 @@ void print_to_98(int s)
 	{
 		while (s <= 98)
 		{
-			printf('%d,', s);
+			printf("%d,", s);
 			if (s != 98)
 				printf(" ");
 			++s;
@@ -22,7 +22,7 @@ void print_to_98(int s)
 	{
 		while (s >= 98)
 		{
-			printf('%d,', s);
+			printf("%d,", s);
 			if (s != 98)
 				printf(" ");
 			--s;
