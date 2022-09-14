@@ -56,9 +56,9 @@ void print_times_table(int n)
 				else if (prd > 99 && prd < 1000)
 				{
 					_print_char(' ', 1, true);
-					_putchar(prd / 100 + '0', 1, false);
-					_putchar((tens % 10) + '0', 1, false);
-					_putchar(ones + '0', 1, false);
+					_print_char(prd / 100 + '0', 1, false);
+					_print_char((tens % 10) + '0', 1, false);
+					_print_char(ones + '0', 1, false);
 				}
 			}
 			_putchar('\n');
