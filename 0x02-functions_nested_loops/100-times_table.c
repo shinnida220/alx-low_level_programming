@@ -50,7 +50,7 @@ void print_times_table(int n)
 				else if (prd >= 10 && prd < 100)
 				{
 					_print_char(' ', 2, true);
-					_print_char((tens % 10) + '0');
+					_print_char((tens % 10) + '0', 1, false);
 					_print_char(tens + '0', 1, false);
 				}
 				else if (prd > 99 && prd < 1000)
