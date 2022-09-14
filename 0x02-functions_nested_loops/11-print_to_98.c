@@ -10,22 +10,19 @@ void print_to_98(int s)
 {
 	if (s <= 98)
 	{
-		while (s <= 98)
+		while (s < 98)
 		{
-			printf("%d,", s);
-			if (s != 98)
-				printf(" ");
+			printf("%d, ", s);
 			++s;
 		}
 	}
 	else
 	{
-		while (s >= 98)
+		while (s > 98)
 		{
-			printf("%d,", s);
-			if (s != 98)
-				printf(" ");
+			printf("%d, ", s);
 			--s;
 		}
 	}
+	printf("%d,", 98);
 }
