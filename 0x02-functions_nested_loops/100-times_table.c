@@ -47,10 +47,10 @@ void print_times_table(int n)
 					_print_char(' ', 3, true);
 					_print_char(ones + '0', 1, false);
 				}
-				else if (prd % 10 == 0)
+				else if (prd % 10 == 0 && prd < 100)
 				{
 					_print_char(' ', 2, true);
-					_print_char((tens % 10) + '0', 1, false);
+					_print_char(tens + '0', 1, false);
 					_print_char(ones + '0', 1, false);
 				}
 				else if (prd > 10 && prd < 100)
