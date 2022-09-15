@@ -5,11 +5,9 @@
  */
 void more_numbers(void)
 {
-	int i;
-	int ch;
+	int i, ch;
 
-	i = 1;
-	while (i <= 10)
+	for (i = 0; i < 10; i++)
 	{
 		for (ch = 0; ch < 15; ch++)
 		{
@@ -18,6 +16,5 @@ void more_numbers(void)
 			_putchar((ch % 10) + 48);
 		}
 		_putchar('\n');
-		++i;
 	}
 }
