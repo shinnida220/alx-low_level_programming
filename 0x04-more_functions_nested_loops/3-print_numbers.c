@@ -1,16 +1,16 @@
 #include "main.h"
 /**
- * print_numbers - a function that checks for a digit.
+ * print_line - draws a line n times.
  *
  * Return: void
  */
-void print_numbers(void)
+void print_line(int n)
 {
 	int i = 0;
 
-	while (i <= 9)
+	while (i < n)
 	{
-		_putchar(i + '0');
+		_putchar('_');
 		++i;
 	}
 	_putchar('\n');
