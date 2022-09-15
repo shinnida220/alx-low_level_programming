@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_most_numbers - a function that checks for a digit.
  *
