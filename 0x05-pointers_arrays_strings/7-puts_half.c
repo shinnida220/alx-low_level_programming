@@ -10,7 +10,7 @@ int get_string_length(char *s);
 void puts_half(char *str)
 {
 	int i;
-	int count = get_string_length(*str);
+	int count = get_string_length(str);
 
 	if (count % 2 == 1)
 		i = count / 2;
