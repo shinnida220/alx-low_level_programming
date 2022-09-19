@@ -12,7 +12,7 @@ void rev_string(char *s)
 	int max, half;
 	char first, last;
 
-	max = _getStringLength(*s) - 1;
+	max = getStringLength(*s) - 1;
 
 	half = max / 2;
 	while (half >= 0)
