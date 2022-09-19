@@ -9,7 +9,7 @@ int get_string_length(char *s);
  */
 void print_rev(char *s)
 {
-    int i = get_string_length(*s) - 1;
+    int i = get_string_length(s) - 1;
 
     while (i >= 0)
     {
