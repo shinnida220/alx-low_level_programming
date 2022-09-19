@@ -9,14 +9,14 @@ int get_string_length(char *s);
  */
 void print_rev(char *s)
 {
-    int i = get_string_length(s) - 1;
+	int i = get_string_length(s) - 1;
 
-    while (i >= 0)
-    {
-        _putchar(s[i]);
-        i--;
-    }
-    _putchar('\n');
+	while (i >= 0)
+	{
+		_putchar(s[i]);
+		i--;
+	}
+	_putchar('\n');
 }
 
 /**
@@ -26,9 +26,9 @@ void print_rev(char *s)
  */
 int get_string_length(char *s)
 {
-    int i = 0;
+	int i = 0;
 
-    while (s[i] != '\0')
-        i++;
-    return (i);
+	while (s[i] != '\0')
+		i++;
+	return (i);
 }
