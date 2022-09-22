@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - Magic
+ *
+ * Return: int success
+ */
 int main(void)
 {
 	int n;
