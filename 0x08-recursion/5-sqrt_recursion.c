@@ -1,3 +1,5 @@
+int _sqrt(int n, int i);
+
 /**
  * _sqrt_recursion - finds the square root of a number
  * @n: int n
