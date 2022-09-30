@@ -15,11 +15,7 @@ FILES=$(ls)
 for filename in $(ls); do 
     if [[ $filename == *\.c ]] # * is used for pattern matching
     then
-        # echo  -e "Generating object for ${Yellow}${filename}${Color_Off}";
         gcc -c $filename
-        # echo  -e "Generated object-file for ${Green}${filename}${Color_Off}";
-    else
-        # echo "Skipping ${filename} as it is not a c file"; 
     fi
 done
 
