@@ -5,7 +5,7 @@
  * a copy of the string given as a parameter.
  *
  * @str: initial pointer
- * Returns: pointer to new character
+ * Return: pointer to new character
  */
 char *_strdup(char *str)
 {
