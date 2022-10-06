@@ -1,65 +1,15 @@
-#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
 
 /**
- * _length - get the length of strings
- * @str: string to get length of
- * Return: length of string
- */
-int _length(char *str)
-{
-	int i = 0;
-
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
-/**
- * check_number - checks if string has only numbers
- * @str: string to check
- * Return: 0 is true 1 if false
- */
-
-int check_number(char *str)
-{
-	while (*str != '\0')
-	{
-		if (*str < '0' || *str > '9')
-			return (1);
-		str++;
-	}
-	return (0);
-}
-
-/**
- * error_exit - prints error with _putchar
- * and exits with 98
- *
- * Return: Error 98 and exit(98)
- */
-
-int error_exit(void)
-{
-	char *err;
-	int i;
-
-	err = "Error";
-	for (i = 0; err[i] != '\0'; i++)
-		_putchar(err[i]);
-	_putchar('\n');
-	exit(98);
-}
-
-/**
- * _memset - fills memory with a constant byte
+ * __memset - fills memory with a constant byte
  * @s: input pointer
  * @b: characters to fill/set
  * @n: number of bytes to be filled
  * Return: pointer to the filled memory area
  */
-char *_memset(char *s, char b, unsigned int n)
+char *__memset(char *s, char b, unsigned int n)
 {
 	unsigned int i = 0;
 
@@ -72,13 +22,12 @@ char *_memset(char *s, char b, unsigned int n)
 }
 
 /**
- * _calloc - function that allocates memory
- * for an array using memset
+ * __calloc - function that allocates memory
  * @nmemb: size of array
  * @size: size of each element
  * Return: pointer to new allocated memory
  */
-void *_calloc(unsigned int nmemb, unsigned int size)
+void *___calloc(unsigned int nmemb, unsigned int size)
 {
 	char *ptr;
 
@@ -89,14 +38,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (ptr == NULL)
 		return (NULL);
 
-	_memset(ptr, 0, nmemb * size);
+	__memset(ptr, 0, nmemb * size);
 	return (ptr);
 }
 
 /**
  * multiply - initialize array with 0 byte
- * @s1: string 1
- * @s2: string 2
+ * @s1: char 1
+ * @s2: char 2
  * Return: nothing
  */
 void multiply(char *s1, char *s2)
@@ -109,11 +58,8 @@ void multiply(char *s1, char *s2)
 	l2 = _length(s2);
 	tmp = l2;
 	total_l = l1 + l2;
-	ptr = _calloc(sizeof(int), total_l);
-
-	/* store our pointer address to free later */
+	ptr = __calloc(sizeof(int), total_l);
 	temp = ptr;
-
 	for (l1--; l1 >= 0; l1--)
 	{
 		f_digit = s1[l1] - '0';
@@ -127,7 +73,6 @@ void multiply(char *s1, char *s2)
 			ptr[l1 + l2 + 1] = res % 10;
 			res /= 10;
 		}
-
 		if (res)
 			ptr[l1 + l2 + 1] = res % 10;
 	}
@@ -147,13 +92,8 @@ void multiply(char *s1, char *s2)
 
 /**
  * main - Entry point
- *
- * Description: a program that multiplies
- * two positive numbers
- *
  * @argc: number of arguments
  * @argv: arguments array
- *
  * Return: 0 on success 98 on faliure
  */
 int main(int argc, char *argv[])
