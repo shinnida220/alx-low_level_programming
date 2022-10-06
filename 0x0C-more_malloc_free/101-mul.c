@@ -3,44 +3,12 @@
 #include "main.h"
 
 /**
- * __memset - fills memory with a constant byte
- * @s: input pointer
- * @b: characters to fill/set
- * @n: number of bytes to be filled
- * Return: pointer to the filled memory area
- */
-char *__memset(char *s, char b, unsigned int n)
-{
-	unsigned int i = 0;
-
-	while (i < n)
-	{
-		s[i] = b;
-		i++;
-	}
-	return (s);
-}
-
-/**
- * __calloc - function that allocates memory
+ * allocmem - function that allocates memory
  * @nmemb: size of array
  * @size: size of each element
  * Return: pointer to new allocated memory
  */
-void *___calloc(unsigned int nmemb, unsigned int size)
-{
-	char *ptr;
-
-	if (nmemb == 0 || size == 0)
-		return (NULL);
-
-	ptr = malloc(nmemb * size);
-	if (ptr == NULL)
-		return (NULL);
-
-	__memset(ptr, 0, nmemb * size);
-	return (ptr);
-}
+void *allocmem(unsigned int nmemb, unsigned int size);
 
 /**
  * multiply - initialize array with 0 byte
@@ -58,7 +26,7 @@ void multiply(char *s1, char *s2)
 	l2 = _length(s2);
 	tmp = l2;
 	total_l = l1 + l2;
-	ptr = __calloc(sizeof(int), total_l);
+	ptr = allocmem(sizeof(int), total_l);
 	temp = ptr;
 	for (l1--; l1 >= 0; l1--)
 	{
