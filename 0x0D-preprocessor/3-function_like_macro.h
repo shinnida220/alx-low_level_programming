@@ -1,12 +1,4 @@
-#ifndef _main_H_
-#define _main_H_
-
-#define ABS(x)       \
-	do {             \
-		if (x < 1)   \
-		{            \
-			x *= -1; \
-		}            \
-	} while (0)
-
+#ifndef ABS_H
+#define ABS_H
+#define ABS(x) ((x < 0) ? (x) * (-1) : (x))
 #endif
