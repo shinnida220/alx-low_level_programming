@@ -12,13 +12,12 @@ int sum_them_all(const unsigned int n, ...)
 	int i, sum = 0;
 
 	if (n == 0)
-		return (n);
+		return (0);
 
 	va_start(ap, n);
 	for (i = n; i >= 0; i = va_arg(ap, int))
-		sum = i;
+		sum += i;
 
 	va_end(ap);
-
 	return (sum);
 }
